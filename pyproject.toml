@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "coursachevskiy"
+version = "0.1.0"
+description = ""
+authors = ["Дмитрий Екименков <sdakhj@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+get-sorted = 'coursachevskiy.select_sorted:get_sorted'
+get-banch = 'coursachevskiy.get_by_date:get_banch'
